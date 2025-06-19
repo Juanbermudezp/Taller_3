@@ -2,16 +2,13 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="app">
+      <SelectionState runConfigName="TesteableApp.app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="TipCalculatorUITests">
+      <SelectionState runConfigName="PresenceTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="verifyTipCalculationInUI()">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="verifyTipPercentageChange()">
+      <SelectionState runConfigName="Slider_Test">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
