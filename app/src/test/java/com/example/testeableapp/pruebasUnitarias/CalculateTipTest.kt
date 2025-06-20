@@ -3,6 +3,7 @@ package com.example.testeableapp.pruebasUnitarias
 import com.example.testeableapp.ui.Screens.calculateTip
 import org.junit.Assert
 import org.junit.Test
+import kotlin.test.assertEquals
 
 class CalculateTipTest {
 
@@ -36,4 +37,31 @@ class CalculateTipTest {
         val totalPerPerson = (amount + tip)/ numberOfPeople
         Assert.assertEquals(30.0, totalPerPerson, 0.01)
     }
+
+    //Pruebas unitarias adicionales
+
+    //#1.Calcular propina cuando la propina es 0
+    @Test
+    fun `cuando el porcentaje del tip sea 0 calculateTip devuelve 0`() {
+        val amount = 100.0
+        val tipPercent = 0
+        val roundUp = false
+
+        val tip = calculateTip(amount, tipPercent, roundUp)
+
+        assertEquals(0.0, tip, 0.0)
+    }
+
+    //#2.Calcular una propina en decimales precisa sin redondear
+    @Test
+    fun `calcular monto decimal preciso cuando no se redondea`() {
+        val tip = calculateTip(
+            amount = 75.25,
+            tipPercent = 12,
+            roundUp = false
+        )
+        assertEquals(9.03, tip, 0.0001)
+    }
+
+
 }
