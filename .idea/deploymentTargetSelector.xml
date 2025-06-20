@@ -5,10 +5,7 @@
       <SelectionState runConfigName="TesteableApp.app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="PresenceTest">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="Slider_Test">
+      <SelectionState runConfigName="Tests in 'com.example.testeableapp'">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
